@@ -1,6 +1,6 @@
 # build
 ```
-docker build -t fastapi-app .
+docker build -t froggagul/llm-server .
 ```
 
 # run
@@ -10,7 +10,7 @@ docker run --gpus all \
     -v ~/.cache/huggingface:/app/huggingface_cache \
     -e HUGGINGFACE_TOKEN=<hf_token> \
     -e MODEL_NAME=<model_name> \
-    fastapi-app
+    froggagul/llm-server
 ```
 
 model_name stands for huggingface repository Ex) google/gemma-2-2b
